@@ -1,12 +1,9 @@
-from google.colab import drive
 import pandas as pd
 import numpy as np
 
-drive.mount('/content/drive')
-
-file_path = "/content/drive/MyDrive/FDS/EXP2.xlsx"
-
-df = pd.read_excel(file_path, engine='openpyxl')
+df = pd.DataFrame({
+    "Marks": [35, 40, 45, 50, 55, 60, 65, 70, 75, 80]
+})
 
 print("First 5 Rows:")
 print(df.head())
